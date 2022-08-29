@@ -10,7 +10,11 @@ import SixthPage from "./Pages/SixthPage";
 import SeventhPage from "./Pages/SeventhPage";
 import EighthPage from "./Pages/EighthPage";
 import NinthPage from "./Pages/NinthPage"
+import './index.css';
 const dataContext = createContext();
+
+
+
 function App() {
   const [arr , setArr] = useState({})
   useEffect(() => {
@@ -23,7 +27,7 @@ function App() {
   
 
   return (
-    <div className="bg-indigo-900	container  flex justify-center items-center border m-10"><BrowserRouter>
+    <div  ><BrowserRouter>
       <dataContext.Provider value={arr}>
         <Routes>
           <Route path="/" element={<FirstPage />} />

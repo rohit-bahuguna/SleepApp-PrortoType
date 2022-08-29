@@ -1,6 +1,8 @@
 import React , {useContext} from 'react'
 import { Link } from 'react-router-dom'
-import {dataContext} from "../App"
+import { dataContext } from "../App"
+import { BsArrowDownCircleFill } from "react-icons/bs";
+
 function SecondPage() {
   const PageData = useContext(dataContext);
   let appData = PageData.SecondPage
@@ -15,7 +17,7 @@ function SecondPage() {
           <p>{appData.massage}</p>
           <input type="text" placeholder='Choose a nickname' />
           <p>{appData.terms_message} </p>
-      <Link to="/thirdpage"><button>thirdpage </button></Link>
+    <Link to="/thirdpage"> <BsArrowDownCircleFill style={{ color: 'yellow' }} />  </Link>
         </> : "Loading"
       }
       

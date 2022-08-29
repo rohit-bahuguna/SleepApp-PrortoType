@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import {dataContext} from "../App"
+import { dataContext } from "../App"
+import { BsArrowDownCircleFill } from "react-icons/bs";
+
 function FifthPage() {
  const PageData = useContext(dataContext);
   let appData = PageData.fifthPage
@@ -19,7 +21,7 @@ function FifthPage() {
          </> : "Loading"
       }
 
-    <Link to="/sixthpage"><button>sixthpage </button></Link>
+    <Link to="/sixthpage"> <BsArrowDownCircleFill style={{ color: 'yellow' }} />  </Link>
     </div>
   )
 }
