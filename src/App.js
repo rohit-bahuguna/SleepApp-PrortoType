@@ -1,8 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { BrowserRouter , Route , Routes } from "react-router-dom";
 import response  from  "./api"
-import './App.css';
-
 import FirstPage from "./Pages/FirstPage";
 import SecondPage from "./Pages/SecondPage";
 import ThirdPage from "./Pages/ThirdPage";
@@ -25,14 +23,14 @@ function App() {
   
 
   return (
-    <><BrowserRouter>
+    <div className="bg-indigo-900	container  flex justify-center items-center border m-10"><BrowserRouter>
       <dataContext.Provider value={arr}>
         <Routes>
           <Route path="/" element={<FirstPage />} />
           <Route path="/secondpage" element={<SecondPage />} />
           <Route path="/thirdpage" element={<ThirdPage />} />
           <Route path="/fourthpage" element={<FourthPage />} />
-          <Route path="/fiftthpage" element={<FifthPage />} />
+          <Route path="/fifthpage" element={<FifthPage />} />
           <Route path="/sixthpage" element={<SixthPage />} />
           <Route path="/seventhpage" element={<SeventhPage />} />
           <Route path="/eighthpage" element={<EighthPage />} />
@@ -41,7 +39,7 @@ function App() {
         </Routes>
     </dataContext.Provider>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
