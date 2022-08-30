@@ -2,7 +2,7 @@ import React, { useContext} from 'react'
 import { Link } from 'react-router-dom'
 import { dataContext } from "../App"
 import { BsArrowDownCircleFill } from "react-icons/bs";
-
+import {NextButton } from "../Icons/Icons"
  const EighthPage = () => {
 const PageData = useContext(dataContext);
   let appData = PageData.eightthPage
@@ -16,7 +16,7 @@ const PageData = useContext(dataContext);
           
         </div> : "Loading"
       }
-    <Link to="/ninethpage"> <BsArrowDownCircleFill style={{ color: 'yellow' }} />  </Link>
+    <Link to="/ninethpage"> <NextButton/>  </Link>
     </div>
   )
 }

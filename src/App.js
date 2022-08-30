@@ -10,6 +10,7 @@ import SixthPage from "./Pages/SixthPage";
 import SeventhPage from "./Pages/SeventhPage";
 import EighthPage from "./Pages/EighthPage";
 import NinthPage from "./Pages/NinthPage"
+import {Clock} from "./utils/Clock";
 import './index.css';
 const dataContext = createContext();
 
@@ -39,10 +40,13 @@ function App() {
           <Route path="/seventhpage" element={<SeventhPage />} />
           <Route path="/eighthpage" element={<EighthPage />} />
           <Route path="/ninethpage" element={<NinthPage />} />
+         
+
 
         </Routes>
     </dataContext.Provider>
-      </BrowserRouter>
+    </BrowserRouter>
+      
     </div>
   );
 }

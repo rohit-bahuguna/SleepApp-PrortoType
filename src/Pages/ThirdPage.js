@@ -2,6 +2,7 @@ import React, {useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { dataContext } from "../App"
 import { BsArrowDownCircleFill } from "react-icons/bs";
+import {NextButton } from "../Icons/Icons"
 
 function ThirdPage() {
 
@@ -19,7 +20,7 @@ function ThirdPage() {
       }
 
 
-    <Link to="/fourthpage"> <BsArrowDownCircleFill style={{ color: 'yellow' }} />  </Link>
+    <Link to="/fourthpage"> <NextButton />  </Link>
     </div>
   )
 }
